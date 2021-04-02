@@ -3,6 +3,8 @@ Repository containing web scrapers.
 
 # setup guide
 
+pull prac
+
 clone with https / ssh repo url to a directory
 - git clone repo_url
 
