@@ -16,8 +16,11 @@ install requirements
 - pip install -r requirements.txt
 
 run example
-- scrapy crawl es.co.th -o output_filename.csv
+- scrapy runspider filename.py -o output_filename.csv
 
+i.e, scrapy runspider escoth.py -O escoth_data.csv
+
+parameters:
 - -o: append to the output_filename.csv if exists
 
 - -O: overwrite the output_filename.csv if exists
