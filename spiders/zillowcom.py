@@ -22,7 +22,7 @@ class ZillowSpider(Spider):
             )
 
     def locate_region(self, response):
-        regions = response.json().get('resultGroups',[{}])[0].get('results')
+        regions = response.json().get('resultGroups',[{}])[0].get('results',[])
         for region_json in regions:
             display_tag = region_json.get('display')
             yield Request(
